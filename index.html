@@ -1,0 +1,642 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GOLDEN LUXURY — Pulseras en Oro Laminado</title>
+  <meta name="description" content="GOLDEN LUXURY | Pulseras tejidas en oro laminado. Elegancia, lujo y estilo." />
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <i class="bi bi-gem me-2 gold-text" style="font-size:1.3rem"></i>
+        <span class="brand fw-bold gold-text">GOLDEN LUXURY</span>
+      </a>
+      <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#guia">Guía de compra</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="inicio" class="hero">
+    <div class="container position-relative">
+      <div class="mx-auto maxw-900" data-animate>
+        <span class="badge-gold position-relative">Oro Laminado Premium</span>
+        <h1 class="mt-3 brand gold-text">Elegancia tejida, brillo eterno</h1>
+        <p class="subtle">Pulseras artesanales en oro laminado con acabados de alta joyería. Diseñadas para elevar tu estilo con lujo y sofisticación.</p>
+        <div class="d-flex flex-wrap gap-3 justify-content-center">
+          <a href="#productos" class="btn btn-gold"><i class="bi bi-bag-heart me-2"></i>Ver Colección</a>
+          <a href="https://www.instagram.com/goldenluxury_joyeria?igsh=MWJ0eXA4eTZqbnU4aQ==" target="_blank" rel="noopener" class="btn btn-outline-gold"><i class="bi bi-instagram me-2"></i>Ver Catálogo en Instagram</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- PRODUCTOS -->
+  <section id="productos" class="py-5 py-lg-6">
+    <div class="container">
+      <div class="text-center mb-4" data-animate>
+        <h2 class="section-title gold-text">Colección Destacada</h2>
+        <p class="section-legend">Descubre nuestras pulseras tejidas con baño de oro laminado y detalles exclusivos.</p>
+      </div>
+
+      <!-- Filtro -->
+      <div class="d-flex justify-content-end gap-2 mb-3">
+        <select id="sortPrice" class="form-select w-auto">
+          <option value="default">Ordenar por</option>
+          <option value="asc">Precio: menor a mayor</option>
+          <option value="desc">Precio: mayor a menor</option>
+        </select>
+        <button id="resetOrder" class="btn btn-outline-gold btn-sm">Reset</button>
+      </div>
+
+      <!-- Cards -->
+      <div class="row g-4">
+
+          <div class="col-12 col-sm-6 col-lg-4" data-animate>
+          <article class="product-card h-100">
+            <span class="badge-gold">Edición</span>
+            <img src="./IMG/bolsa.jpeg" alt="Pulsera dorada lujo">
+            <div class="p-3 p-lg-4">
+              <h5 class="brand mb-1">Abundacia</h5>
+             <div class="mb-2"><span class="chip">Oro 18K laminado</span><span class="chip">Hipoalergénica</span><span class="chip">tejido fino</span> <span class="chip">ajustable</span></div>
+              <p class="subtle mb-3">Compuesta por 4 balines #5, 10 balines #4 y dije bolsa de dinero de oro laminado de la mejor calidad. </p>
+              <div class="d-flex align-items-center justify-content-between">
+                <span class="price">$100.000</span>
+                <button class="btn btn-outline-gold btn-sm" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#productModal"
+                        data-title="Luxe Link"
+                        data-price="$100.000"
+                        data-img="./IMG/bolsa.jpeg"
+                        data-desc="Pulsera Bolsa de Dinero — Compuesta por 4 balines #5 y 10 balines #4 en oro laminado de la más alta calidad, acompañados de un delicado dije de bolsa de dinero, símbolo de prosperidad y abundancia. Su diseño único combina brillo, distinción y significado, convirtiéndola en una pieza ideal para realzar tu estilo y atraer buenas energías.
+Además, cuenta con 2 años de garantía contra cambios de tonalidad, lo que asegura que conserve su esplendor y durabilidad con el paso del tiempo.">
+                  <i class="bi bi-bag-plus me-1"></i>Consultar
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+        <!-- Card 1 -->
+        <div class="col-12 col-sm-6 col-lg-4" data-animate>
+          <article class="product-card h-100">
+            <span class="badge-gold">Nuevo</span>
+            <img src="./IMG/primerarojo.jpeg" alt="Pulsera tejida oro laminado">
+            <div class="p-3 p-lg-4">
+              <h5 class="brand mb-1">Pulsera tejida casual</h5>
+              <div class="mb-2"><span class="chip">Oro 18K laminado</span><span class="chip">Hipoalergénica</span><span class="chip">tejido fino</span> <span class="chip">ajustable</span></div>
+              <p class="subtle mb-3">Compuesta por 10 balines #5 de oro laminado de la mejor calidad.
+2 años de garantía por cambio de tonalidad.</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <span class="price">$75.000</span>
+                <button class="btn btn-outline-gold btn-sm" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#productModal"
+                        data-title="Trenza Royale"
+                        data-price="$75.000"
+                        data-img="./IMG/primera.jpeg"
+                        data-desc="pulsera compuesta por 10 balines #5 en oro laminado de la más alta calidad, cuidadosamente trabajados para resaltar un brillo duradero y sofisticado. Cada detalle refleja exclusividad y estilo, convirtiéndola en una pieza imprescindible para realzar tu elegancia. Además, cuenta con 2 años de garantía contra cambios de tonalidad, asegurando su belleza y distinción con el paso del tiempo.">
+                  <i class="bi bi-bag-plus me-1"></i>Consultar
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-12 col-sm-6 col-lg-4" data-animate>
+          <article class="product-card h-100">
+            <span class="badge-gold">Best Seller</span>
+            <img src="./IMG/segundo.jpeg" alt="Pulsera dorada tejida">
+            <div class="p-3 p-lg-4">
+              <h5 class="brand mb-1">pulsera tejida sutil</h5>
+               <div class="mb-2"><span class="chip">Oro 18K laminado</span><span class="chip">Hipoalergénica</span><span class="chip">tejido fino</span> <span class="chip">ajustable</span></div>
+              <p class="subtle mb-3">Compuesta por 5 balines #4 de oro laminado de la mejor calidad. 
+2 años de garantía por cambio de tonalidad.</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <span class="price">$35.000</span>
+                <button class="btn btn-outline-gold btn-sm" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#productModal"
+                        data-title="Golden Weave"
+                        data-price="$35.000"
+                        data-img="./IMG/segundo.jpeg"
+                        data-desc="Pulsera elaborada con 5 balines #4 en oro laminado de la más alta calidad, diseñada para reflejar un brillo auténtico y un estilo sofisticado. Su acabado de lujo garantiza distinción en cada detalle, mientras que su garantía de 2 años contra cambios de tonalidad asegura que conserve su esplendor con el paso del tiempo.">
+                  <i class="bi bi-bag-plus me-1"></i>Consultar
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-12 col-sm-6 col-lg-4" data-animate>
+          <article class="product-card h-100">
+            <span class="badge-gold">Edición</span>
+            <img src="./IMG/tercera.jpeg" alt="Pulsera dorada lujo">
+            <div class="p-3 p-lg-4">
+              <h5 class="brand mb-1">San benito exclusiva</h5>
+             <div class="mb-2"><span class="chip">Oro 18K laminado</span><span class="chip">Hipoalergénica</span><span class="chip">tejido fino</span> <span class="chip">ajustable</span></div>
+              <p class="subtle mb-3">Compuesta por 10 balines #4 y herraje de san Benito pequeño de oro laminado de la mejor calidad 2 años de garantía por cambio de tonalidad.</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <span class="price">$75.000</span>
+                <button class="btn btn-outline-gold btn-sm" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#productModal"
+                        data-title="Luxe Link"
+                        data-price="$75.000"
+                        data-img="./IMG/tercera.jpeg"
+                        data-desc="Pulsera compuesta por 10 balines #4 y un fino herraje de San Benito pequeño en oro laminado de la más alta calidad. Una joya que combina elegancia y significado espiritual, diseñada para perdurar con brillo y estilo. Además, cuenta con 2 años de garantía contra cambios de tonalidad, asegurando su belleza y distinción a lo largo del tiempo.">
+                  <i class="bi bi-bag-plus me-1"></i>Consultar
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+ <div class="col-12 col-sm-6 col-lg-4" data-animate>
+          <article class="product-card h-100">
+            <span class="badge-gold">Edición</span>
+            <img src="./IMG/novena.jpeg" alt="Pulsera dorada lujo">
+            <div class="p-3 p-lg-4">
+              <h5 class="brand mb-1">Pulsera San Benito clásica</h5>
+             <div class="mb-2"><span class="chip">Oro 18K laminado</span><span class="chip">Hipoalergénica</span><span class="chip">tejido fino</span> <span class="chip">ajustable</span></div>
+              <p class="subtle mb-3">Compuesta por 8 balines número 4 y herraje de san Benito pequeño de oro laminado de la mejor calidad</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <span class="price">$70.000</span>
+                <button class="btn btn-outline-gold btn-sm" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#productModal"
+                        data-title="Luxe Link"
+                        data-price="$70.000"
+                        data-img="./IMG/novena.jpeg"
+                        data-desc="Pulsera San Benito — Compuesta por 8 balines #4 en oro laminado de la más alta calidad, acompañados de un delicado herraje de San Benito pequeño, símbolo de protección y fe. Su diseño combina espiritualidad y estilo, logrando una pieza sofisticada y significativa que se adapta a cualquier ocasión.
+Además, cuenta con 2 años de garantía contra cambios de tonalidad, lo que asegura que conserve su brillo y elegancia con el paso del tiempo.">
+                  <i class="bi bi-bag-plus me-1"></i>Consultar
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+           <div class="col-12 col-sm-6 col-lg-4" data-animate>
+          <article class="product-card h-100">
+            <span class="badge-gold">Edición</span>
+            <img src="./IMG/cuarta.jpeg" alt="Pulsera dorada lujo">
+            <div class="p-3 p-lg-4">
+              <h5 class="brand mb-1">pulsera tejida  casual y exclusiva </h5>
+             <div class="mb-2"><span class="chip">Oro 18K laminado</span><span class="chip">Hipoalergénica</span><span class="chip">tejido fino</span> <span class="chip">ajustable</span></div>
+              <p class="subtle mb-3">Compuesta por 10 balines #4 de oro laminado de la mejor calidad</p>
+              <div class="d-flex align-items-center justify-content-between">
+                <span class="price">$55.000</span>
+                <button class="btn btn-outline-gold btn-sm" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#productModal"
+                        data-title="Luxe Link"
+                        data-price="$55.000"
+                        data-img="./IMG/cuarta.jpeg"
+                        data-desc="Pulsera compuesta por 10 balines #4 en oro laminado de la más alta calidad, trabajados con precisión para ofrecer un brillo intenso y un acabado impecable que realza la belleza de cada detalle. Su diseño clásico y sofisticado la convierte en una pieza versátil, ideal tanto para el uso diario como para ocasiones especiales, aportando un toque de lujo y distinción a tu estilo personal.
+Además, cuenta con 2 años de garantía contra cambios de tonalidad, lo que asegura que su esplendor y elegancia se mantendrán intactos con el paso del tiempo, brindándote la confianza de llevar una joya que combina durabilidad, exclusividad y elegancia eterna.">
+                  <i class="bi bi-bag-plus me-1"></i>Consultar
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+
+      
+
+          <div class="col-12 col-sm-6 col-lg-4" data-animate>
+          <article class="product-card h-100">
+            <span class="badge-gold">Edición</span>
+            <img src="./IMG/quinta.jpeg" alt="Pulsera dorada lujo">
+            <div class="p-3 p-lg-4">
+              <h5 class="brand mb-1">Pulsera potro</h5>
+             <div class="mb-2"><span class="chip">Oro 18K laminado</span><span class="chip">Hipoalergénica</span><span class="chip">tejido fino</span> <span class="chip">ajustable</span></div>
+              <p class="subtle mb-3">pulsera tejida potro Compuesta por 10 balines #4 de oro laminado </p>
+              <div class="d-flex align-items-center justify-content-between">
+                <span class="price">$80.000</span>
+                <button class="btn btn-outline-gold btn-sm" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#productModal"
+                        data-title="Luxe Link"
+                        data-price="$80.000"
+                        data-img="./IMG/quinta.jpeg"
+                        data-desc="Pulsera Tejida Potro — Compuesta por 10 balines #4 de oro laminado  Una pieza artesanal en oro laminado de alta calidad, elaborada con un tejido firme y detallado que evoca fuerza, elegancia y carácter. Su diseño robusto, pero a la vez sofisticado, la convierte en un accesorio versátil que realza cualquier estilo. Además, cuenta con 2 años de garantía contra cambios de tonalidad, asegurando que conserve su brillo y distinción con el paso del tiempo.">
+                  <i class="bi bi-bag-plus me-1"></i>Consultar
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+         <div class="col-12 col-sm-6 col-lg-4" data-animate>
+          <article class="product-card h-100">
+            <span class="badge-gold">Edición</span>
+            <img src="./IMG/sexa.jpeg" alt="Pulsera dorada lujo">
+            <div class="p-3 p-lg-4">
+              <h5 class="brand mb-1">Pulsera de proteccion</h5>
+             <div class="mb-2"><span class="chip">Oro 18K laminado</span><span class="chip">Hipoalergénica</span><span class="chip">tejido fino</span> <span class="chip">ajustable</span></div>
+              <p class="subtle mb-3">Compuesta por 8 balines #5 de oro laminado de la mejor calidad </p>
+              <div class="d-flex align-items-center justify-content-between">
+                <span class="price">$60.000</span>
+                <button class="btn btn-outline-gold btn-sm" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#productModal"
+                        data-title="Luxe Link"
+                        data-price="$60.000"
+                        data-img="./IMG/sexa.jpeg"
+                        data-desc="Pulsera compuesta por 8 balines #5 en oro laminado de la más alta calidad, trabajados con delicadeza para resaltar un brillo uniforme y un acabado impecable. Su diseño minimalista, pero sofisticado, aporta distinción y versatilidad, convirtiéndola en una joya ideal tanto para el uso diario como para ocasiones especiales. Además, cuenta con 2 años de garantía contra cambios de tonalidad, lo que asegura que conserve su esplendor y elegancia con el paso del tiempo">
+                  <i class="bi bi-bag-plus me-1"></i>Consultar
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+           <div class="col-12 col-sm-6 col-lg-4" data-animate>
+          <article class="product-card h-100">
+            <span class="badge-gold">Edición</span>
+            <img src="./IMG/septima.jpeg" alt="Pulsera dorada lujo">
+            <div class="p-3 p-lg-4">
+              <h5 class="brand mb-1">Pulsera neopreoro negra</h5>
+             <div class="mb-2"><span class="chip">Oro 18K laminado</span><span class="chip">Hipoalergénica</span><span class="chip">tejido fino</span> <span class="chip">ajustable</span></div>
+              <p class="subtle mb-3">Compuesta por 7 balines #4 de oro laminado de la mejor calidad </p>
+              <div class="d-flex align-items-center justify-content-between">
+                <span class="price">$75.000</span>
+                <button class="btn btn-outline-gold btn-sm" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#productModal"
+                        data-title="Luxe Link"
+                        data-price="$75.000"
+                        data-img="./IMG/septima.jpeg"
+                        data-desc="Pulsera Neopreoro — Compuesta por 8 balines #4 en oro laminado de la más alta calidad, combinados con delicadas bolas negras que realzan el contraste y aportan un estilo único y sofisticado. Una pieza moderna y versátil que refleja elegancia en cada detalle, ideal para quienes buscan distinción con un toque diferente. Además, cuenta con 2 años de garantía contra cambios de tonalidad, asegurando su brillo y durabilidad con el paso del tiempo.">
+                  <i class="bi bi-bag-plus me-1"></i>Consultar
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+         <div class="col-12 col-sm-6 col-lg-4" data-animate>
+          <article class="product-card h-100">
+            <span class="badge-gold">Edición</span>
+            <img src="./IMG/octava.jpeg" alt="Pulsera dorada lujo">
+            <div class="p-3 p-lg-4">
+              <h5 class="brand mb-1">Pulsera tres carriles</h5>
+             <div class="mb-2"><span class="chip">Oro 18K laminado</span><span class="chip">Hipoalergénica</span><span class="chip">tejido fino</span> <span class="chip">ajustable</span></div>
+              <p class="subtle mb-3">Compuesta por 14 balines #4 y 26 balines número 3 de oro laminado de la mejor calidad </p>
+              <div class="d-flex align-items-center justify-content-between">
+                <span class="price">$100.000</span>
+                <button class="btn btn-outline-gold btn-sm" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#productModal"
+                        data-title="Luxe Link"
+                        data-price="$100.000"
+                        data-img="./IMG/octava.jpeg"
+                        data-desc="Pulsera Tres Carriles — Compuesta por 14 balines #4 y 26 balines #3 en oro laminado de la más alta calidad, ensamblados con un diseño minucioso que realza su brillo y sofisticación. Su estilo trenzado de múltiples carriles aporta volumen y distinción, convirtiéndola en una pieza única que equilibra elegancia y presencia. Ideal para ocasiones especiales, pero también versátil para un look refinado en el día a día.
+Además, cuenta con 2 años de garantía contra cambios de tonalidad, asegurando que conserve su resplandor y durabilidad con el paso del tiempo.">
+                  <i class="bi bi-bag-plus me-1"></i>Consultar
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+         
+       
+     <div class="col-12 col-sm-6 col-lg-4" data-animate>
+          <article class="product-card h-100">
+            <span class="badge-gold">Edición</span>
+            <img src="./IMG/roja.jpeg" alt="Pulsera dorada lujo">
+            <div class="p-3 p-lg-4">
+              <h5 class="brand mb-1">Pulsera neopreoro roja</h5>
+             <div class="mb-2"><span class="chip">Oro 18K laminado</span><span class="chip">Hipoalergénica</span><span class="chip">tejido fino</span> <span class="chip">ajustable</span></div>
+              <p class="subtle mb-3">Compuesta por 7 balines #4 de oro laminado de la mejor calidad </p>
+              <div class="d-flex align-items-center justify-content-between">
+                <span class="price">$75.000</span>
+                <button class="btn btn-outline-gold btn-sm" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#productModal"
+                        data-title="Luxe Link"
+                        data-price="$75.000"
+                        data-img="./IMG/roja.jpeg"
+                        data-desc="Pulsera Neopreoro  roja— Compuesta por 8 balines #4 en oro laminado de la más alta calidad, combinados con delicadas bolas negras que realzan el contraste y aportan un estilo único y sofisticado. Una pieza moderna y versátil que refleja elegancia en cada detalle, ideal para quienes buscan distinción con un toque diferente. Además, cuenta con 2 años de garantía contra cambios de tonalidad, asegurando su brillo y durabilidad con el paso del tiempo.">
+                  <i class="bi bi-bag-plus me-1"></i>Consultar
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+
+             <div class="col-12 col-sm-6 col-lg-4" data-animate>
+          <article class="product-card h-100">
+            <span class="badge-gold">Edición</span>
+            <img src="./IMG/azul.jpeg" alt="Pulsera dorada lujo">
+            <div class="p-3 p-lg-4">
+              <h5 class="brand mb-1">Pulsera neopreoro azul</h5>
+             <div class="mb-2"><span class="chip">Oro 18K laminado</span><span class="chip">Hipoalergénica</span><span class="chip">tejido fino</span> <span class="chip">ajustable</span></div>
+              <p class="subtle mb-3">Compuesta por 7 balines #4 de oro laminado de la mejor calidad </p>
+              <div class="d-flex align-items-center justify-content-between">
+                <span class="price">$75.000</span>
+                <button class="btn btn-outline-gold btn-sm" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#productModal"
+                        data-title="Luxe Link"
+                        data-price="$75.000"
+                        data-img="./IMG/azul.jpeg"
+                        data-desc="Pulsera Neopreoro azul — Compuesta por 8 balines #4 en oro laminado de la más alta calidad, combinados con delicadas bolas negras que realzan el contraste y aportan un estilo único y sofisticado. Una pieza moderna y versátil que refleja elegancia en cada detalle, ideal para quienes buscan distinción con un toque diferente. Además, cuenta con 2 años de garantía contra cambios de tonalidad, asegurando su brillo y durabilidad con el paso del tiempo.">
+                  <i class="bi bi-bag-plus me-1"></i>Consultar
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+        
+
+
+
+             <div class="col-12 col-sm-6 col-lg-4" data-animate>
+          <article class="product-card h-100">
+            <span class="badge-gold">Edición</span>
+            <img src="./IMG/colombia.jpeg" alt="Pulsera dorada lujo">
+            <div class="p-3 p-lg-4">
+              <h5 class="brand mb-1">Jefesita</h5>
+             <div class="mb-2"><span class="chip">Oro 18K laminado</span><span class="chip">Hipoalergénica</span><span class="chip">tejido fino</span> <span class="chip">ajustable</span></div>
+              <p class="subtle mb-3">Compuesta por 4 balines #5 de oro laminado  tejida tricolor de la mejor calidad </p>
+              <div class="d-flex align-items-center justify-content-between">
+                <span class="price">$35.000</span>
+               <button class="btn btn-outline-gold btn-sm" 
+        data-bs-toggle="modal" 
+        data-bs-target="#productModal"
+        data-title="Luxe Link"
+        data-price="$35.000"
+        data-img="./IMG/colombia.jpeg"
+        data-desc="Pulsera Tricolor — Compuesta por 4 balines #5 en oro laminado de la más alta calidad, finamente entrelazada en un diseño tejido tricolor que resalta su brillo y originalidad. Una pieza vibrante y sofisticada que combina modernidad y tradición, ideal para quienes buscan un accesorio exclusivo y lleno de estilo. Además, cuenta con 2 años de garantía contra cambios de tonalidad, asegurando que conserve su esplendor y durabilidad con el paso del tiempo.">
+  <i class="bi bi-bag-plus me-1"></i>Consultar
+</button>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+
+      </div>
+
+      <div class="text-center mt-4" data-animate>
+        <a href="#contacto" class="btn btn-gold btn-lg"><i class="bi bi-stars me-2"></i>Contactanos!</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL PRODUCTO -->
+  <div class="modal fade" id="productModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title brand gold-text" id="productModalLabel"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body row g-4">
+          <div class="col-md-6 text-center">
+            <img id="productModalImg" src="" alt="" class="img-fluid rounded shadow-sm">
+          </div>
+          <div class="col-md-6">
+            <p id="productModalDesc" class="subtle"></p>
+            <p class="fw-bold gold-text fs-5" id="productModalPrice"></p>
+            <button id="whatsappBtn" class="btn btn-gold">
+  <i class="bi bi-whatsapp me-2">
+
+  </i>Consultar por WhatsApp
+</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+ 
+  <!-- SOBRE NOSOTROS -->
+  <section id="nosotros" class="py-5">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6" data-animate>
+          <div class="about-card p-4 p-lg-5">
+            <h3 class="brand gold-text mb-2">Artesanía con sello de lujo</h3>
+            <p class="subtle">En <span class="gold-text">Golden Luxury</span> diseñamos y elaboramos pulseras tejidas en oro laminado con procesos de alta calidad. Cada pieza combina técnica artesanal y estándares de joyería para garantizar durabilidad, brillo y comodidad.</p>
+            <ul class="list-unstyled mt-3 mb-0">
+              <li class="mb-2"><i class="bi bi-shield-check me-2 text-warning"></i> Garantía de 1 año por defecto de fabricación</li>
+              <li class="mb-2"><i class="bi bi-droplet-half me-2 text-warning"></i> Resistentes al agua y hipoalergénicas</li>
+              <li class="mb-2"><i class="bi bi-box-seam me-2 text-warning"></i> Empaque premium para regalo</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6" data-animate>
+          <div class="glass-card p-2 p-lg-3 h-100">
+            <img class="w-100 rounded-4" style="aspect-ratio: 4/3; object-fit: cover;" src="IMG/mostrario.jpeg" alt="Detalle artesanal de joyería" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="py-5 py-lg-6">
+    <div class="container">
+      <div class="text-center mb-4" data-animate>
+        <h2 class="section-title gold-text">Contáctanos</h2>
+        <p class="section-legend">Asesoría personalizada para tu compra o pedidos al por mayor.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-6" data-animate>
+        <img class="w-100 rounded-4" style="aspect-ratio: 4/3; object-fit: cover;" src="./IMG/mostrar.jpeg" alt="Detalle artesanal de joyería" />
+        </div>
+
+        <div class="col-lg-6" data-animate>
+          <div class="about-card p-4 h-100">
+            <h5 class="brand mb-2 gold-text">Atención al cliente</h5>
+            <p class="subtle">Lunes a sábado, 9:00–18:00 COL. Respuesta media: 1–3 h.</p>
+            <div class="d-flex flex-column gap-2">
+              <div><i class="bi bi-whatsapp me-2 text-success"></i><a class="link-light text-decoration-none" href="https://wa.me/573138685402" target="_blank" rel="noopener">(+57) 313 868 5402</a></div>
+              <div><i class="bi bi-telephone me-2 text-warning"></i>(+57) 317 561 6837</div>
+              <div><i class="bi bi-geo-alt me-2 text-warning"></i>Bucaramanga, Santander</div>
+            </div>
+            <hr class="border-0" style="height:1px; background: linear-gradient(90deg, transparent, rgba(212,175,55,.4), transparent)">
+            <p class="mb-2 subtle">Guía de compra</p>
+            <ol class="subtle small mb-0 ps-3">
+              <li>Elige el producto que deseas comprar.</li>
+              <li>contactanos por WhatsApp para mas informacion</li>
+              <li>Selecciona tu forma de pago y el envío.</li>
+              <li>Recibe tu pedido. ¡Fácil!</li>
+            </ol>
+            <div class="d-flex gap-2 mt-2">
+              <a class="btn btn-outline-gold btn-sm" href="https://www.instagram.com/goldenluxury_joyeria?igsh=MWJ0eXA4eTZqbnU4aQ==" target="_blank" rel="noopener"><i class="bi bi-instagram me-1"></i>Instagram</a>
+              <a class="btn btn-outline-gold btn-sm" href="https://www.tiktok.com/@joyeria_golden_luxury?_t=ZS-8z6iINkcxBi&_r=1"><i class="bi bi-tiktok me-1"></i>TikTok</a>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GUÍA DE COMPRA -->
+  <section id="guia" class="py-5">
+    <div class="container">
+      <div class="text-center mb-4" data-animate>
+        <h2 class="section-title gold-text">Cómo comprar</h2>
+        <p class="section-legend">Sigue estos pasos y luce tu nueva pulsera Golden Luxury</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3" data-animate>
+          <div class="glass-card p-4 h-100 text-center rounded-4">
+            <i class="bi bi-bag fs-3 gold-text"></i>
+            <h6 class="mt-2 brand">1. Elige</h6>
+            <p class="subtle small mb-0">Selecciona el producto que más te guste.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3" data-animate>
+          <div class="glass-card p-4 h-100 text-center rounded-4">
+            <i class="bi bi-ui-checks-grid fs-3 gold-text"></i>
+            <h6 class="mt-2 brand">2. Tus datos</h6>
+            <p class="subtle small mb-0">Contactanos por WhatsApp.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3" data-animate>
+          <div class="glass-card p-4 h-100 text-center rounded-4">
+            <i class="bi bi-credit-card fs-3 gold-text"></i>
+            <h6 class="mt-2 brand">3. Pago & envío</h6>
+            <p class="subtle small mb-0">Elige tu método de pago favorito y el envío.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3" data-animate>
+          <div class="glass-card p-4 h-100 text-center rounded-4">
+            <i class="bi bi-box2-heart fs-3 gold-text"></i>
+            <h6 class="mt-2 brand">4. ¡Recíbelo!</h6>
+            <p class="subtle small mb-0">Disfruta de tu compra con empaque premium.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-4">
+    <div class="container">
+      <div class="d-flex flex-column flex-lg-row align-items-center justify-content-between gap-3">
+        <div class="d-flex align-items-center gap-2">
+          <i class="bi bi-gem gold-text"></i>
+          <span class="brand">GOLDEN LUXURY</span>
+          <span class="text-secondary">©AnyiSusano<span id="year"></span></span>
+        </div>
+        <div class="social d-flex gap-2">
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.tiktok.com/@joyeria_golden_luxury?_t=ZS-8z6iINkcxBi&_r=1" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+        
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Año dinámico
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Animación on-scroll básica
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: .14 });
+    document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
+
+    // Guardar orden original
+    const container = document.querySelector("#productos .row");
+    const originalCards = Array.from(container.children);
+
+    // Ordenar precios
+    document.getElementById("sortPrice").addEventListener("change", function() {
+      const order = this.value;
+      const cards = Array.from(container.querySelectorAll(".col-12.col-sm-6.col-lg-4"));
+
+      if (order !== "default") {
+        cards.sort((a, b) => {
+          const priceA = parseInt(a.querySelector(".price").textContent.replace(/\D/g, ""));
+          const priceB = parseInt(b.querySelector(".price").textContent.replace(/\D/g, ""));
+          return order === "asc" ? priceA - priceB : priceB - priceA;
+        });
+        cards.forEach(card => container.appendChild(card));
+      }
+    });
+
+      document.addEventListener("DOMContentLoaded", () => {
+    const modal = document.getElementById("productModal");
+    const whatsappBtn = document.getElementById("whatsappBtn");
+
+    modal.addEventListener("show.bs.modal", (event) => {
+      const button = event.relatedTarget;
+      const title = button.getAttribute("data-title"); 
+      const price = button.getAttribute("data-price");
+
+      // 👉 Reemplaza este número con el tuyo
+      const phone = "573138685402"; 
+      const message = `Hola 👋, quiero más información sobre la pulsera *${title}* que cuesta ${price}.`;
+
+      whatsappBtn.onclick = () => {
+        window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, "_blank");
+      };
+    });
+  });
+
+
+    // Reset orden
+    document.getElementById("resetOrder").addEventListener("click", function() {
+      container.innerHTML = "";
+      originalCards.forEach(card => container.appendChild(card));
+      document.getElementById("sortPrice").value = "default";
+    });
+
+    // Modal dinámico
+    const productModal = document.getElementById('productModal');
+    productModal.addEventListener('show.bs.modal', function (event) {
+      const button = event.relatedTarget;
+      const title = button.getAttribute('data-title');
+      const desc = button.getAttribute('data-desc');
+      const price = button.getAttribute('data-price');
+      const img = button.getAttribute('data-img');
+
+      document.getElementById('productModalLabel').textContent = title;
+      document.getElementById('productModalDesc').textContent = desc;
+      document.getElementById('productModalPrice').textContent = price;
+      document.getElementById('productModalImg').src = img;
+    });
+  </script>
+</body>
+</html>
