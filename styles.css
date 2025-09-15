@@ -19,7 +19,12 @@
       scroll-behavior: smooth; 
       overflow-x: hidden;
     }
-
+    #sortPrice {
+        width: 100%;
+        max-width: 200px;
+        background-color: white;
+        color: black;
+    }
     /* Tipografías y acentos */
     .brand { font-family: 'Playfair Display', serif; letter-spacing: .5px; }
     .gold-text { 
